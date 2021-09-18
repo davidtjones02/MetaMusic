@@ -1,11 +1,11 @@
 const chalk = require('chalk');
 const app = require('./app');
+const config = require('./config/config.js');
 
-const port = 5002;
 let server;
 
-server = app.listen(port, () => {
-    console.log(`${chalk.green('✓')} Server is running at ${chalk.underline.blue(`http://localhost:${port}`)}`);
+server = app.listen(config.app.port, () => {
+    console.log(`${chalk.green('✓')} Server is running at ${chalk.underline.blue(`http://localhost:${config.app.port}`)}`);
 });
 
 
