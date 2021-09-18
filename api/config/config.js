@@ -11,6 +11,9 @@ const dev = {
     api: {
         route: 'api',
         version: 'v1'
+    },
+    uploads: {
+        destination: './uploads'
     }
 }
 
@@ -21,6 +24,9 @@ const build = {
     api: {
         route: 'api',
         version: 'v1'
+    },
+    uploads: {
+        destination: './uploads'
     }
 }
 
